@@ -1,6 +1,4 @@
-import React from "react";
-import checkMark from "../assets/checkmark.svg";
-import * as Styled from "./Main";
+import * as Styled from "../styles/Utils.style";
 import styled from "styled-components";
 
 const Addons = styled.div`
@@ -45,30 +43,6 @@ const Addons = styled.div`
 
         > div:nth-last-child(2) {
           flex-grow: 1;
-
-          > a {
-            color: #22ad01;
-            position: relative;
-            text-decoration: none;
-            display: inline-block;
-            ::after {
-              content: "";
-              width: 100%;
-              background-color: #22ad01;
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              height: 2px;
-              transition: transform 0.5s ease-out;
-              transform: scaleX(1);
-              transform-origin: bottom left;
-            }
-            :hover::after {
-              transition: transform 0.5s ease-out;
-              transform: scaleX(0);
-              transform-origin: bottom right;
-            }
-          }
         }
 
         > div:last-child {
@@ -89,6 +63,7 @@ const Addons = styled.div`
     }
   }
 `;
+
 const Addon = () => {
   return (
     <Styled.$Container>
@@ -124,7 +99,7 @@ const Addon = () => {
               </div>
               <Styled.$Spacer_30></Styled.$Spacer_30>
               <div>
-                <a href="#">Learn more</a>
+                <Styled.$FancyLink href="#">Learn more</Styled.$FancyLink>
               </div>
               <div>
                 <span>$10</span>

@@ -1,6 +1,6 @@
 import React from "react";
 import checkMark from "../assets/checkmark.svg";
-import * as Styled from "./Main";
+import * as Styled from "../styles/Utils.style";
 import styled from "styled-components";
 
 const $PriceOption = styled.div`
@@ -60,7 +60,7 @@ const Price = ({ isMonthly }: StyleProps) => {
           <div className="benefit">
             Ideal for freelancers and contractors just starting out.
           </div>
-          <div className="benefit">{isMonthly ? "" : "Billed annualy."}</div>
+          <div className="benefit">{isMonthly ? "" : "Billed annually."}</div>
           <Styled.$Spacer_30></Styled.$Spacer_30>
           <Styled.$Separator></Styled.$Separator>
           <Styled.$Spacer_30></Styled.$Spacer_30>

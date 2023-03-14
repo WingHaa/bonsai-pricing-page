@@ -5,34 +5,7 @@ import Price from "./PriceOption";
 import Addon from "./Addon";
 import { FAQ } from "./FAQ";
 import { Review } from "./Review";
-
-export const $Spacer_15 = styled.div`
-  height: 15px;
-`;
-export const $Spacer_30 = styled.div`
-  height: 30px;
-`;
-
-export const $Separator = styled.div`
-  border-bottom: 1px solid #d3dcd4;
-  width: 100%;
-`;
-
-export const $DefaultButton = styled.span`
-  background-color: #22ad01;
-  border-radius: 36px;
-  padding: 12px 56px 14px;
-  color: white;
-  cursor: pointer;
-`;
-
-export const $Container = styled.div`
-  position: relative;
-  width: 100%;
-  max-width: 1144px;
-  margin-left: auto;
-  margin-right: auto;
-`;
+import * as Styled from "../styles/Utils.style";
 
 const $Header = styled.div`
   margin-left: auto;
@@ -104,9 +77,9 @@ export const Main = ({ isMonthly, handleClick }: Props) => {
         <$Header>
           <h1>Pick the best plan for your business</h1>
         </$Header>
-        <$Spacer_30></$Spacer_30>
+        <Styled.$Spacer_30></Styled.$Spacer_30>
         <Switch isMonthly={isMonthly} handleClick={handleClick} />
-        <$Spacer_30></$Spacer_30>
+        <Styled.$Spacer_30></Styled.$Spacer_30>
         <$PriceOuter>
           <Price isMonthly={isMonthly} />
         </$PriceOuter>

@@ -6,17 +6,14 @@ const StyledRoot = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
+  box-sizing: border-box;
 `;
 
 function App() {
-  const [isMonthly, setIsMonthly] = useState(true);
-  const handleChangeIsMonthly = () => {
-    setIsMonthly((prev) => !prev);
-  };
   return (
     <StyledRoot>
       <Header />
-      <Main isMonthly={isMonthly} handleClick={handleChangeIsMonthly} />
+      <Main />
       {/* <Footer/> */}
     </StyledRoot>
   );

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Switch from "./Switch";
 import Price from "./PriceOption";
 import Addon from "./Addon";
+import Support from "./Support";
 import { FAQ } from "./FAQ";
 import { Review } from "./Review";
 import * as Styled from "../styles/Utils.style";
@@ -62,15 +63,11 @@ const $PriceOuter = styled.div`
   }
 `;
 
-interface StyleProps {
-  isMonthly: boolean;
-}
-
-interface Props extends StyleProps {
-  handleClick: () => void;
-}
-
-export const Main = ({ isMonthly, handleClick }: Props) => {
+export const Main = () => {
+  const [isMonthly, setIsMonthly] = useState(true);
+  const handleChangeIsMonthly = () => {
+    setIsMonthly((prev) => !prev);
+  };
   return (
     <>
       <div className="pricing">
@@ -78,7 +75,7 @@ export const Main = ({ isMonthly, handleClick }: Props) => {
           <h1>Pick the best plan for your business</h1>
         </$Header>
         <Styled.$Spacer_30></Styled.$Spacer_30>
-        <Switch isMonthly={isMonthly} handleClick={handleClick} />
+        <Switch isMonthly={isMonthly} handleClick={handleChangeIsMonthly} />
         <Styled.$Spacer_30></Styled.$Spacer_30>
         <$PriceOuter>
           <Price isMonthly={isMonthly} />
@@ -87,6 +84,7 @@ export const Main = ({ isMonthly, handleClick }: Props) => {
       <Addon />
       <FAQ />
       <Review />
+      <Support />
     </>
   );
 };

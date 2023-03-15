@@ -117,7 +117,7 @@ const Price = ({ isMonthly }: StyleProps) => {
             <div className="benefit">
               Everything a growing independent business needs to thrive.
             </div>
-            <div className="benefit">{isMonthly ? "" : "Billed annualy."}</div>
+            <div className="benefit">{isMonthly ? "" : "Billed annually."}</div>
             <Styled.$Spacer_30></Styled.$Spacer_30>
             <Styled.$Separator></Styled.$Separator>
             <Styled.$Spacer_30></Styled.$Spacer_30>
@@ -179,7 +179,7 @@ const Price = ({ isMonthly }: StyleProps) => {
           <div className="benefit">
             The perfect package for small businesses and agencies.
           </div>
-          <div className="benefit">{isMonthly ? "" : "Billed annualy."}</div>
+          <div className="benefit">{isMonthly ? "" : "Billed annually."}</div>
           <Styled.$Spacer_30></Styled.$Spacer_30>
           <Styled.$Separator></Styled.$Separator>
           <Styled.$Spacer_30></Styled.$Spacer_30>

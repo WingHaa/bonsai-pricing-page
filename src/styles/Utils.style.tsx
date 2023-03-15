@@ -37,11 +37,13 @@ export const $Separator = styled.div`
   width: 100%;
 `;
 
-export const $DefaultButton = styled.span`
+export const $DefaultButton = styled.div`
   background-color: #22ad01;
   border-radius: 36px;
   padding: 12px 56px 14px;
   color: white;
+  text-align: center;
+  display: inline-block;
   cursor: pointer;
   &:hover {
     background-color: #2bb90a;
@@ -55,4 +57,8 @@ export const $Container = styled.div`
   max-width: 1144px;
   margin-left: auto;
   margin-right: auto;
+`;
+
+export const $Border = styled.div`
+  border-bottom: 1px solid #d3dcd4;
 `;

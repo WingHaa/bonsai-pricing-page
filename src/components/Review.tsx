@@ -50,11 +50,10 @@ const $ReviewContainer = styled.div`
   display: flex;
   flex-direction: column;
   overflow-x: auto;
-  row-gap: 20px;
+  gap: 20px;
   > div {
     display: flex;
     justify-content: space-between;
-    column-gap: 20px;
     @media (max-width: 1920px) {
       column-gap: normal;
     }

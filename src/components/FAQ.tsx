@@ -53,7 +53,7 @@ const $AccordionItem = styled.div<StyleProps>`
   > div:last-child {
     color: #65816d;
     overflow: hidden;
-    transition: all 125ms ease-in;
+    transition: max-height 125ms ease-in;
     max-height: ${({ show }) => (show ? "300px" : "0")};
   }
 `;
@@ -87,15 +87,12 @@ export const FAQ = () => {
               <img src={rectangle} alt="" />
             </div>
             <div>
-              {show[0] &&
-                `
               When you start your trial with Bonsai you'll receive full,
               unlimited access to the plan you chose. You will need to enter
               your credit card information to begin your trial, but don't worry
               - we won't charge you anything until the trial ends. You can
               cancel at any time during the trial period via your Subscriptions
               settings.
-               `}
             </div>
           </$AccordionItem>
           <$AccordionItem show={show[1]}>
@@ -104,9 +101,8 @@ export const FAQ = () => {
               <img src={rectangle} alt="" />
             </div>
             <div>
-              {show[1] &&
-                ` Yes, you can upgrade, downgrade or cancel your plan
-              at any time via your Subscription settings. `}
+              ` Yes, you can upgrade, downgrade or cancel your plan at any time
+              via your Subscription settings. `
             </div>
           </$AccordionItem>
           <$AccordionItem show={show[2]}>
@@ -115,11 +111,10 @@ export const FAQ = () => {
               <img src={rectangle} alt="" />
             </div>
             <div>
-              {show[2] &&
-                ` Is my Bonsai subscription tax deductible? Yes, the
-              IRS allows for tax deduction for software you use to run your
-              business. Bonsai's expense tracking even automatically categorizes
-              your subscription as a deductible software expense. `}
+              ` Is my Bonsai subscription tax deductible? Yes, the IRS allows
+              for tax deduction for software you use to run your business.
+              Bonsai's expense tracking even automatically categorizes your
+              subscription as a deductible software expense. `
             </div>
           </$AccordionItem>
           <$AccordionItem show={show[3]}>
@@ -128,13 +123,12 @@ export const FAQ = () => {
               <img src={rectangle} alt="" />
             </div>
             <div>
-              {show[3] &&
-                ` If you contact us within two weeks of being charged
-              for your subscription, we will be happy to issue a refund for you.
-              Beyond those two weeks, you will need to cancel or modify the
+              ` If you contact us within two weeks of being charged for your
+              subscription, we will be happy to issue a refund for you. Beyond
+              those two weeks, you will need to cancel or modify the
               subscription from the Subscriptions tab in Settings to avoid
               future charges, but refunds will not be issued. This applies to
-              both monthly and annual plans. `}
+              both monthly and annual plans. `
             </div>
           </$AccordionItem>
         </div>

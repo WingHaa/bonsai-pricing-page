@@ -5,7 +5,6 @@ import styled from "styled-components";
 const StyledRoot = styled.div`
   margin-right: auto;
   margin-left: auto;
-  padding: 0 15px;
   box-sizing: border-box;
 `;
 

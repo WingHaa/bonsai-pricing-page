@@ -110,7 +110,13 @@ const Price = ({ isMonthly }: StyleProps) => {
         <div className="special-container">
           <$PriceOption>
             <div className="price-tier">Professional</div>
-            <div>${isMonthly ? "39" : "32"} /month</div>
+            <div>
+              <span style={{ fontSize: "20px", marginRight: "8px" }}>$</span>
+              <span style={{ fontSize: "36px", marginRight: "8px" }}>
+                {isMonthly ? "39" : "32"}
+              </span>
+              <span style={{ fontSize: "16px", color: "#65816d" }}>/month</span>
+            </div>
             <Styled.$Spacer_15></Styled.$Spacer_15>
             <Styled.$DefaultButton>Start for free</Styled.$DefaultButton>
             <Styled.$Spacer_15></Styled.$Spacer_15>
@@ -172,7 +178,13 @@ const Price = ({ isMonthly }: StyleProps) => {
       <div className="price-option-container">
         <$PriceOption>
           <div className="price-tier">Business</div>
-          <div>${isMonthly ? "79" : "52"} /month</div>
+          <div>
+            <span style={{ fontSize: "20px", marginRight: "8px" }}>$</span>
+            <span style={{ fontSize: "36px", marginRight: "8px" }}>
+              {isMonthly ? "79" : "52"}
+            </span>
+            <span style={{ fontSize: "16px", color: "#65816d" }}>/month</span>
+          </div>
           <Styled.$Spacer_15></Styled.$Spacer_15>
           <Styled.$DefaultButton>Start for free</Styled.$DefaultButton>
           <Styled.$Spacer_15></Styled.$Spacer_15>

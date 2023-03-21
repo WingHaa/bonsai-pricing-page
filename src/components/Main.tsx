@@ -63,13 +63,17 @@ const $PriceOuter = styled.div`
   }
 `;
 
+const $Main = styled.main`
+  padding-top: 10rem;
+`;
+
 export const Main = () => {
   const [isMonthly, setIsMonthly] = useState(true);
   const handleChangeIsMonthly = () => {
     setIsMonthly((prev) => !prev);
   };
   return (
-    <>
+    <$Main>
       <div className="pricing">
         <$Header>
           <h1>Pick the best plan for your business</h1>
@@ -85,6 +89,6 @@ export const Main = () => {
       <FAQ />
       <Review />
       <Support />
-    </>
+    </$Main>
   );
 };

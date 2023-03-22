@@ -67,7 +67,7 @@ const $Main = styled.main`
   padding-top: 10rem;
 `;
 
-export const Main = () => {
+const Main = () => {
   const [isMonthly, setIsMonthly] = useState(true);
   const handleChangeIsMonthly = () => {
     setIsMonthly((prev) => !prev);
@@ -92,3 +92,5 @@ export const Main = () => {
     </$Main>
   );
 };
+
+export default Main;

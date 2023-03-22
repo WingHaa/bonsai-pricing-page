@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import * as Styled from "./Main";
 import rectangle from "../assets/Rectangle.svg";
 import branch from "../assets/Branch.png";
 

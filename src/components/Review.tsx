@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import g2Icon from "../assets/g2.svg";
 import trustIcon from "../assets/Trustpilot.svg";

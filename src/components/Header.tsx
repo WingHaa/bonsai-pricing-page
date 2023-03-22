@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import * as Styled from "../styles/Utils.style";
 import styled from "styled-components";
 import bonsaiIcon from "../assets/bonsai-icon.svg";
@@ -41,12 +40,15 @@ const $Heading = styled.ul`
   gap: 10px;
   > li {
     > p {
+      color: #65816d;
       padding: 24px 14px;
+      &:hover {
+        color: #22ad01;
+      }
     }
     &:hover > div:last-child {
       display: flex;
     }
-    position: static;
   }
 `;
 
@@ -100,7 +102,7 @@ const $FeatureMenuWrapper = styled.div`
   display: none;
 `;
 
-export const Header = () => {
+const Header = () => {
   return (
     <StyledHeader>
       <MobileHeader />
@@ -286,3 +288,5 @@ export const Header = () => {
     </StyledHeader>
   );
 };
+
+export default Header;

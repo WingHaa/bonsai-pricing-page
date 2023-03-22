@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import * as Styled from "../styles/Utils.style";
-import leave from "../assets/leave.png";
 import cs from "../assets/Group_12657-p-800.png";
 import pattern from "../assets/pattern.png";
 
@@ -37,7 +36,7 @@ const $Container = styled.section`
     }
   }
   > div:last-child {
-    margin-top: 120px;
+    margin: 120px 30px 0;
     background-color: #003c2f;
     background-image: url(${pattern});
     display: flex;
